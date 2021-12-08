@@ -55,45 +55,41 @@
             
             </div>
 
-            <p id="text-apps-head">VOICE APPS</p>
-            <!-- Apps Grid -->
             <div id="my-apps" style="padding-bottom: 32px;">
                 <div v-for="app in myApps" class="app-card" :style="app.cardbg">
                     <div class="mdc-layout-grid" style="overflow: hidden;">
                         <div class="mdc-layout-grid__inner" style="width: 100%;">
                             <div
                                 class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone">
-                                <!-- app name -->
-                                <h1 class="app-name">{{ app.name }}</h1>
-                                <!-- app description -->
-                                <p class="app-descr">{{ app.descr }}</p>
-                                <!-- links -->
-                                <div align="right">
-                                    <div style="display: inline;">
-                                        <a class="app-link-btn" :href="app.gplaylink" v-if="app.gplaylink != null"
-                                            target="_blank">Google Play</a>
-                                        <a class="app-link-btn" :href="app.githublink" v-if="app.githublink != null"
-                                            target="_blank">GitHub</a>
-                                    </div>
-                                </div>
-                                <!-- tags -->
-                                <div align="right" style="display: inline;">
-                                    <!-- Android icon -->
-                                    <svg-icon v-if="app.android" v-bind:svg="icons.android"></svg-icon>
-                                    <!-- ios icon -->
-                                    <svg-icon v-if="app.ios" v-bind:svg="icons.ios"></svg-icon>
-                                    <!-- Flutter icon -->
-                                    <svg-icon v-if="app.flutter" v-bind:svg="icons.flutter"></svg-icon>
-                                    <!-- Kotlin icon -->
-                                    <svg-icon v-if="app.kotlin" v-bind:svg="icons.kotlin"></svg-icon>
-                                </div>
+                                <img src="https://github.com/ID-Start-Winter21/mucdai.github.io/blob/main/images/screenshots/test.svg" alt="Team 01"/>
                             </div>
-
-                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone"
-                                style="max-height: 300px;">
-                                <a :href="app.downloadlink" target="_blank">
-                                    <img :src="app.screenshot" class="app-screenshot" />
-                                </a>
+                            <div
+                                class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone">
+                                <img src="https://github.com/ID-Start-Winter21/mucdai.github.io/blob/main/images/screenshots/test.pdf" alt="Team 01"/>
+                            </div>
+                            <div
+                                class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone">
+                                <img src="https://github.com/ID-Start-Winter21/mucdai.github.io/blob/main/images/screenshots/test.jpg" alt="Team 01"/>
+                            </div>
+                            <div
+                                class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone">
+                                <img src="https://github.com/ID-Start-Winter21/mucdai.github.io/blob/main/images/screenshots/02.png" alt="Team 02"/>
+                            </div>
+                            <div
+                                class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone">
+                                <img src="https://github.com/ID-Start-Winter21/mucdai.github.io/blob/main/images/screenshots/04.png" alt="Team 04"/>
+                            </div>
+                            <div
+                                class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone">
+                                <img src="https://github.com/ID-Start-Winter21/mucdai.github.io/blob/main/images/screenshots/06.png" alt="Team 06"/>
+                            </div>
+                            <div
+                                class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone">
+                                <img src="https://github.com/ID-Start-Winter21/mucdai.github.io/blob/main/images/screenshots/08.png" alt="Team 08"/>
+                            </div>
+                            <div
+                                class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone">
+                                <img src="https://github.com/ID-Start-Winter21/mucdai.github.io/blob/main/images/screenshots/09.png" alt="Team 09"/>
                             </div>
                         </div>
                     </div>
