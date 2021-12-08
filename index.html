@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is my new Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukas Koller Portfolio</title>
+
+    <meta name="theme-color" content="#448AFF">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/icons/icon-192x192.png">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Lukas Koller">
+    <link rel="apple-touch-icon-precomposed" href="images/icons/apple-touch-icon-precomposed.png">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" type="text/css">
+    <!-- Required styles for MDC Web -->
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Vue.js -->
+    <!-- development version -->
+    <!-- <script src="https://unpkg.com/vue"></script> -->
+
+    <!-- production version -->
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+</head>
+
+<body>
+    <!-- Main Layout -->
+    <main id="content">
+        <div id="app">
+            <div id="header">
+                <!-- Social Media Buttons -->
+                <div id="icon-link-btns">
+                    <!-- Info Button -->
+                    <a class="icon-link-btn" href="info/info.html">
+                        <!-- Info Svg icon -->
+                        <svg-icon v-bind:svg="icons.info"></svg-icon>
+                    </a>
+                    <!-- Mail Button -->
+                    <a class="icon-link-btn" href="mailto:charlotte.boehm@hm.edu" target="_blank">
+                        <!-- Mail Svg icon -->
+                        <svg-icon v-bind:svg="icons.mail"></svg-icon>
+                    </a>
+                </div>
+                <h1 id="text-name">Hi!A Festival - Voice Apps</h1>
+            
+            </div>
+
+            <p id="text-apps-head">VOICE APPS</p>
+            <!-- Apps Grid -->
+            <div id="my-apps" style="padding-bottom: 32px;">
+                <div v-for="app in myApps" class="app-card" :style="app.cardbg">
+                    <div class="mdc-layout-grid" style="overflow: hidden;">
+                        <div class="mdc-layout-grid__inner" style="width: 100%;">
+                            <div
+                                class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone">
+                                <!-- app name -->
+                                <h1 class="app-name">{{ app.name }}</h1>
+                                <!-- app description -->
+                                <p class="app-descr">{{ app.descr }}</p>
+                                <!-- links -->
+                                <div align="right">
+                                    <div style="display: inline;">
+                                        <a class="app-link-btn" :href="app.gplaylink" v-if="app.gplaylink != null"
+                                            target="_blank">Google Play</a>
+                                        <a class="app-link-btn" :href="app.githublink" v-if="app.githublink != null"
+                                            target="_blank">GitHub</a>
+                                    </div>
+                                </div>
+                                <!-- tags -->
+                                <div align="right" style="display: inline;">
+                                    <!-- Android icon -->
+                                    <svg-icon v-if="app.android" v-bind:svg="icons.android"></svg-icon>
+                                    <!-- ios icon -->
+                                    <svg-icon v-if="app.ios" v-bind:svg="icons.ios"></svg-icon>
+                                    <!-- Flutter icon -->
+                                    <svg-icon v-if="app.flutter" v-bind:svg="icons.flutter"></svg-icon>
+                                    <!-- Kotlin icon -->
+                                    <svg-icon v-if="app.kotlin" v-bind:svg="icons.kotlin"></svg-icon>
+                                </div>
+                            </div>
+
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone"
+                                style="max-height: 300px;">
+                                <a :href="app.downloadlink" target="_blank">
+                                    <img :src="app.screenshot" class="app-screenshot" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="float: right; margin: 8px;">
+                <div style="display: inline;">
+                    <!-- website source code link -->
+                    <a id="privacy-terms-link" href="privacy/privacy.html">Privacy and Terms</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- load data -->
+    <script type="text/javascript" src="js/data/myapps.js"></script>
+    <script type="text/javascript" src="js/data/icons.js"></script>
+    <!-- register svg-icon component -->
+    <!-- <script type="text/javascript" src="js/icons-comp.js"></script> -->
+    <!-- load vue app js -->
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <!-- Required MDC Web JavaScript library -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</body>
+
+</html>
