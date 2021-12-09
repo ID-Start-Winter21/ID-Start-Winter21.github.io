@@ -2,4 +2,6 @@ theme: jekyll-theme-minimal
 title: Voice Apps
 description: Hi!A - Festival für Kunst und Forschung in Bayern 
 show_downloads: false
-
+color-scheme: dark
+logo: /assets/img/hia.png
+favicon: true
