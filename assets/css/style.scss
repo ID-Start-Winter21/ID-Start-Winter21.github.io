@@ -21,7 +21,7 @@ h1 {
   color: #e4eb2c;
 }
 
-.schedule {
+table, th, td {
   display: flex;
   flex-direction: column;
   flex-grow: 1;

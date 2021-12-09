@@ -1,4 +1,4 @@
-<link rel="shortcut icon" type="image/png" href="favicon.png">
+<link rel="shortcut icon" type="image/png" href="favicon.ico">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet"> 
 
 <a href="images/projects/1_VoiceAdventure.png">
