@@ -11,9 +11,8 @@ body {
   padding: 50px;
   color: #e4eb2c;
   font-family: monospace;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -35,8 +34,8 @@ footer {
   background-color: #fb443b;
   width: 100%;
   bottom: 0;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  margin-top: 16px;
+  padding: 16px 0;
   // grid-row-start: 2;
   // grid-row-end: 3;
 }
