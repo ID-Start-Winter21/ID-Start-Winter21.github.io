@@ -13,6 +13,10 @@ body {
   font-family: monospace;
 }
 
+.wrapper {
+  overflow-y: auto;
+}
+
 header {
   color: #e4eb2c;
 }
