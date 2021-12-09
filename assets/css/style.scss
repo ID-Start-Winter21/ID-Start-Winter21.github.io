@@ -21,14 +21,41 @@ h1 {
   color: #e4eb2c;
 }
 
+table, th, td {
+  border: 0px solid #e4eb2c;
+}
 
 footer {
   color: #e4eb2c;
 }
 
+
 .voiceapps {
   color: #e4eb2c;
 }
+
+a {
+  color: #e4eb2c;
+}
+
+a:link {
+  color: #e4eb2c;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #e4eb2c;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #7043b6;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 
 
 
