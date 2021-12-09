@@ -1,4 +1,4 @@
-# Voice Apps - Hi!A - Festival für Kunst & Forschung in Bayern
+<link rel="shortcut icon" type="image/png" href="favicon.png">
 
 ![Voice Adventure](images/projects/1_VoiceAdventure.svg)
 
