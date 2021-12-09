@@ -8,5 +8,9 @@
 
 body {
   background-color: #fb443b;
-  padding:50px;
+  padding: 50px;
 }
+
+$color-hiayellow: #e4eb2c;
+
+h1 { color: $color-hiayellow; }
