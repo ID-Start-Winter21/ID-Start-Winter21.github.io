@@ -34,14 +34,14 @@
 </a>
 
 <a href="images/projects/9_PartyModus.png">
-![Party Modus](images/projects/9_PartyModus_00001.png)
+![Party Modus](images/projects/9_PartyModus.png)
 </a>
 
 <a href="images/projects/10_OfficeHealth.png">
-![Office Health](images/projects/10_OfficeHealth_00001.png)
+![Office Health](images/projects/10_OfficeHealth.png)
 </a>
 
 <a href="images/projects/11_Koerperklaus.png">
-![Körperklaus](images/projects/11_Koerperklaus_00001.png)
+![Körperklaus](images/projects/11_Koerperklaus.png)
 </a>
 
