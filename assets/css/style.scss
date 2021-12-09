@@ -11,7 +11,8 @@ body {
   padding: 50px;
   color: #e4eb2c;
   font-family: monospace;
-  margin-bottom: 2em;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
 header {
@@ -28,7 +29,8 @@ table, th, td {
 
 footer {
   color: #e4eb2c;
-  position: relative;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 
